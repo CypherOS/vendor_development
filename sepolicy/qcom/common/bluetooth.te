@@ -1,0 +1,1 @@
+allow bluetooth keystore_service:service_manager find;
