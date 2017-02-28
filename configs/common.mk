@@ -1,7 +1,5 @@
 PRODUCT_BRAND ?= aoscp
 
-SUPERUSER_EMBEDDED := true
-
 # Include versioning information
 # Format: Major.minor.maintenance(-TAG)
 export AOSCP_VERSION := 3.6
