@@ -2,9 +2,9 @@ PRODUCT_BRAND ?= aoscp
 
 # Include versioning information
 # Format: Major.minor.maintenance(-TAG)
-export AOSCP_VERSION := 3.6
+export AOSCP_VERSION := 3.6.1
 
-export AOSCP_RELEASE_ID := CR.NR22.36.R1-0223
+export AOSCP_RELEASE_ID := CR.NR25.36.R2-0311
 
 export AOSCP_API_LEVEL := Jamocha
 
