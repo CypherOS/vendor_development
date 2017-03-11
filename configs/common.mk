@@ -194,7 +194,8 @@ DEVICE_PACKAGE_OVERLAYS += vendor/aoscp/overlay/common
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_VERSION_TAGS=release-keys USER=android-build BUILD_UTC_DATE=$(shell date +"%s")
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
--include vendor/aoscp/configs/partner_gms.mk
+-include vendor/aoscp/configs/aoscp_framework.mk
 -include vendor/aoscp/configs/common_packages.mk
+-include vendor/aoscp/configs/partner_gms.mk
 
 $(call prepend-product-if-exists, vendor/extra/product.mk)
