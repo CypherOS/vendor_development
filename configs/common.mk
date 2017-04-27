@@ -149,6 +149,11 @@ PRODUCT_PACKAGES += \
     mkfs.exfat
 endif
 
+# Enable dexpreopt for all nightlies
+ifeq ($(AOSCP_BUILDTYPE),)
+    WITH_DEXPREOPT := TRUE
+endif
+
 PRODUCT_PROPERTY_OVERRIDES += \
     media.sf.omx-plugin=libffmpeg_omx.so \
     media.sf.extractor-plugin=libffmpeg_extractor.so
