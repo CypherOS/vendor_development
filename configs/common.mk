@@ -1,4 +1,5 @@
 PRODUCT_BRAND ?= aoscp
+WITH_DEXPREOPT := TRUE
 
 # Include versioning information
 # Format: Major.minor.maintenance(-TAG)
