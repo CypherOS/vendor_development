@@ -19,8 +19,5 @@
 
     <!-- Help URL, Fingerprint [DO NOT TRANSLATE] -->
     <string name="help_url_fingerprint" translatable="false">https://support.google.com</string>
-	
-	<!-- If the Storage Manager settings are enabled. -->
-    <bool name="config_storage_manager_settings_enabled">true</bool>
 </resources>
 
