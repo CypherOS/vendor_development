@@ -20,6 +20,7 @@ PRODUCT_PACKAGES += \
 
 # AOSCP Packages
 PRODUCT_PACKAGES += \
+    AoscpSetupWizard \
     Calculator \
     Luna \
     Recorder \
