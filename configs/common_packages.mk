@@ -21,6 +21,7 @@ PRODUCT_PACKAGES += \
 # AOSCP Packages
 PRODUCT_PACKAGES += \
     AoscpSetupWizard \
+    Bolt \
     Calculator \
     Luna \
     Recorder \
