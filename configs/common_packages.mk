@@ -88,11 +88,11 @@ PRODUCT_PACKAGES += \
     media_codecs_ffmpeg.xml
 	
 # Telephony
-PRODUCT_PACKAGES += \
-    telephony-ext
+#PRODUCT_PACKAGES += \
+    #telephony-ext
 
-PRODUCT_BOOT_JARS += \
-    telephony-ext
+#PRODUCT_BOOT_JARS += \
+    #telephony-ext
 
 PRODUCT_PACKAGES += \
     procmem \
