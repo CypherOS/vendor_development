@@ -180,7 +180,8 @@ PRODUCT_BUILD_PROP_OVERRIDES += BUILD_VERSION_TAGS=release-keys USER=android-bui
 -include vendor/aoscp/configs/partner_gms.mk
 -include vendor/aoscp/configs/common_packages.mk
 
-# Google Pixel UI
+# AOSCP Overlay Vendor
 -include vendor/overlay/aoscp/configs/common.mk
+TARGET_USES_GOOGLE_OVERLAY := true
 
 $(call prepend-product-if-exists, vendor/extra/product.mk)
