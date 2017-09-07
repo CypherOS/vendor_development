@@ -170,9 +170,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     media.sf.omx-plugin=libffmpeg_omx.so \
     media.sf.extractor-plugin=libffmpeg_extractor.so
 
-# Common overlay
-DEVICE_PACKAGE_OVERLAYS += vendor/aoscp/overlay/common
-
 # Version information used on all builds
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_VERSION_TAGS=release-keys USER=android-build BUILD_UTC_DATE=$(shell date +"%s")
 
@@ -180,7 +177,12 @@ PRODUCT_BUILD_PROP_OVERRIDES += BUILD_VERSION_TAGS=release-keys USER=android-bui
 -include vendor/aoscp/configs/partner_gms.mk
 -include vendor/aoscp/configs/common_packages.mk
 
+# Common overlay
+DEVICE_PACKAGE_OVERLAYS += vendor/overlay/aoscp/overlay/common
+
 # Google Pixel UI
--include vendor/overlay/aoscp/configs/common.mk
+ifneq ($(TARGET_USES_GOOGLE_OVERLAY),false)
+    -include vendor/overlay/google/configs/common.mk
+endif
 
 $(call prepend-product-if-exists, vendor/extra/product.mk)
