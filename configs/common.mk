@@ -4,7 +4,8 @@ PRODUCT_BRAND ?= aoscp
 # Format: Major.minor.maintenance(-TAG)
 export AOSCP_VERSION := 5.0
 export AOSCP_API_LEVEL := FC-Preview
-export AOSCP_RELEASE := OFU-5x0.0$(shell date -u +%m%d)MJ
+export AOSCP_RELEASE_TAG := FU
+export AOSCP_PATCH_LEVEL := MJ
 
 AOSCP_DISPLAY_VERSION := $(AOSCP_VERSION)
 
@@ -19,16 +20,18 @@ ifndef AOSCP_BUILDTYPE
     AOSCP_BUILDTYPE := unofficial
 endif
 
+export AOSCP_RELEASE := $(shell echo $(AOSCP_BUILDTYPE) | head -c 1 | tr /a-z/ /A-Z/)$(AOSCP_RELEASE_TAG)$(shell echo $(AOSCP_VERSION) | sed '0,/\./s/\./x/')$(shell date -u +%m%d)$(AOSCP_PATCH_LEVEL)
+
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.modversion=$(ROM_VERSION) \
     ro.aoscp.version=$(AOSCP_VERSION) \
-	ro.aoscp.release=$(AOSCP_RELEASE) \
+    ro.aoscp.release=$(AOSCP_RELEASE) \
     ro.aoscp.device=$(AOSCP_DEVICE) \
     ro.aoscp.display.version=$(AOSCP_DISPLAY_VERSION) \
     ro.aoscp.releasetype=$(AOSCP_BUILDTYPE) \
     ro.aoscp.api=$(AOSCP_API_LEVEL)
 
-export AOSCP_TARGET_ZIP := aoscp_$(AOSCP_BUILD)-$(AOSCP_RELEASE)-$(AOSCP_BUILDTYPE)
+export AOSCP_TARGET_ZIP := aoscp_$(AOSCP_BUILD)-$(AOSCP_RELEASE)
 
 # Bootanimation
 PRODUCT_PACKAGES += bootanimation.zip
