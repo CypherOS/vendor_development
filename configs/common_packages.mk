@@ -24,6 +24,9 @@ PRODUCT_PACKAGES += \
     Luna \
 	MusicX \
 	Recorder
+	
+# Google Packages
+PRODUCT_PACKAGES += Wallpapers
 
 # AOSCP Updates
 #PRODUCT_PACKAGES +=  \
