@@ -122,10 +122,6 @@ PRODUCT_PACKAGES += \
     mkfs.exfat
 endif
 
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    media.sf.omx-plugin=libffmpeg_omx.so \
-    media.sf.extractor-plugin=libffmpeg_extractor.so
-
 # Common overlay
 DEVICE_PACKAGE_OVERLAYS += vendor/aoscp/overlay/common
 

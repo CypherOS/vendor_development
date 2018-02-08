@@ -71,12 +71,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     rsync
 
-# Stagefright FFMPEG plugin
-PRODUCT_PACKAGES += \
-    libffmpeg_extractor \
-    libffmpeg_omx \
-    media_codecs_ffmpeg.xml
-
 PRODUCT_PACKAGES += \
     procmem \
     procrank
