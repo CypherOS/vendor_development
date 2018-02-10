@@ -111,6 +111,13 @@ PRODUCT_COPY_FILES += \
 # Backup Services whitelist
 PRODUCT_COPY_FILES += \
     vendor/aoscp/configs/permissions/backup.xml:system/etc/sysconfig/backup.xml
+	
+# Google Exclusives
+PRODUCT_COPY_FILES += \
+    vendor/aoscp/configs/permissions/google_build.xml:system/etc/sysconfig/google_build.xml \
+	vendor/aoscp/configs/permissions/nexus.xml:system/etc/sysconfig/nexus.xml \
+	vendor/aoscp/configs/permissions/pixel_2017.xml:system/etc/sysconfig/pixel_2017.xml \
+	vendor/aoscp/configs/permissions/pixel_2017_exclusive.xml:system/etc/sysconfig/pixel_2017_exclusive.xml
 
 # Signature compatibility validation
 PRODUCT_COPY_FILES += \
