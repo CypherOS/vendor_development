@@ -189,4 +189,7 @@ PRODUCT_COPY_FILES += \
 # Overlay vendor extension
 -include vendor/aoscp-overlay/configs/common.mk
 
+# Include AmbientSense vendor extension
+-include vendor/aoscp-ambient/AmbientMusic.mk
+
 $(call prepend-product-if-exists, vendor/extra/product.mk)
