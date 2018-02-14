@@ -19,6 +19,7 @@ PRODUCT_PACKAGES += \
 
 # AOSCP Packages
 PRODUCT_PACKAGES += \
+    AoscpSetupWizard \
     Bolt \
     GalleryX \
     Luna \
