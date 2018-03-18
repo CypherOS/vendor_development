@@ -2,9 +2,9 @@ PRODUCT_BRAND ?= aoscp
 
 # Include versioning information
 # Format: Major.minor.maintenance(-TAG)
-export AOSCP_VERSION := 5.3.1
-export AOSCP_API_LEVEL := Cinnabun
-export AOSCP_RELEASE := OFU-5x0.0$(shell date -u +%m%d)MJ
+export AOSCP_VERSION := 6.0.0
+export AOSCP_API_LEVEL := Parfait
+export AOSCP_RELEASE := CBNP.8201.71.30006
 
 AOSCP_DISPLAY_VERSION := $(AOSCP_VERSION)
 
