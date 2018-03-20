@@ -71,8 +71,7 @@ PRODUCT_COPY_FILES += \
     vendor/aoscp/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
     vendor/aoscp/prebuilt/common/bin/50-aoscp.sh:system/addon.d/50-aoscp.sh \
     vendor/aoscp/prebuilt/common/bin/blacklist:system/addon.d/blacklist \
-    vendor/aoscp/prebuilt/common/bin/99-backup.sh:system/addon.d/99-backup.sh \
-    vendor/aoscp/prebuilt/common/etc/backup.conf:system/etc/backup.conf
+    vendor/aoscp/prebuilt/common/bin/99-backup.sh:system/addon.d/99-backup.sh
 
 # Backup Services whitelist
 PRODUCT_COPY_FILES += \
