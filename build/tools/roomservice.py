@@ -112,8 +112,8 @@ def indent(elem, level=0):
             elem.tail = i
 
 def get_default_revision():
-    m = ElementTree.parse(".repo/manifest.xml")
-    d = m.findall('default')[0]
+    m = ElementTree.parse(".repo/manifests/default-aoscp.xml")
+    d = m.findall('remote')[0]
     r = d.get('revision')
     return r.replace('refs/heads/', '').replace('refs/tags/', '')
 
