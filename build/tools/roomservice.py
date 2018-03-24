@@ -57,6 +57,8 @@ if not depsonly:
 
 repositories = []
 
+aoscp_default_revision = "parfait-release"
+
 try:
     authtuple = netrc.netrc().authenticators("api.github.com")
 
@@ -110,12 +112,6 @@ def indent(elem, level=0):
     else:
         if level and (not elem.tail or not elem.tail.strip()):
             elem.tail = i
-
-def get_default_revision():
-    m = ElementTree.parse(".repo/manifest.xml")
-    d = m.findall('default')[0]
-    r = d.get('revision')
-    return r.replace('refs/heads/', '').replace('refs/tags/', '')
 
 def get_from_manifest(devicename):
     try:
@@ -234,7 +230,7 @@ else:
             
             manufacturer = repo_name.replace("device_", "").replace("_" + device, "")
             
-            default_revision = get_default_revision()
+            default_revision = aoscp_default_revision
             print("Default revision: %s" % default_revision)
             print("Checking branch info")
             githubreq = urllib.request.Request(repository['branches_url'].replace('{/branch}', ''))
