@@ -1,6 +1,16 @@
 # Theme vendor extension
 -include vendor/aoscp/themes/Android.mk
 
+# Dark Theme
+PRODUCT_PACKAGES += \
+    SystemDarkTheme \
+	SettingsDarkTheme
+	
+# Black Theme
+PRODUCT_PACKAGES += \
+    SystemBlackTheme \
+	SettingsBlackTheme
+
 # Deep Purple
 PRODUCT_PACKAGES += \
     DeepPurpleTheme
