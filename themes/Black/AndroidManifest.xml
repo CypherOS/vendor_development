@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="co.aoscp.accent.white"
+    package="co.aoscp.accent.black"
     platformBuildVersionCode="26"
     platformBuildVersionName="8.0.0">
 
-    <overlay android:priority="28" android:targetPackage="android" />
+    <overlay android:priority="26" android:targetPackage="android" />
 
     <application android:hasCode="false"
-                 android:label="White">
+                 android:label="Black">
 				 
 				<meta-data
 				    android:name="Color_manager"

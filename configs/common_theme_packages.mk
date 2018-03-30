@@ -10,42 +10,46 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     SystemBlackTheme \
     SettingsBlackTheme
-
-# Deep Purple
+	
+# Blue Themes
 PRODUCT_PACKAGES += \
-    DeepPurpleTheme
+    BlueTheme \
+    IndigoTheme \
+	OceanicTheme \
+	BrightSkyTheme
 
-# Indigo
+# Pink Themes
 PRODUCT_PACKAGES += \
-    IndigoTheme
+    PinkTheme \
+	PlayBoyTheme
 
-# Pink
+# Purple Themes
 PRODUCT_PACKAGES += \
-    PinkTheme
+    PurpleTheme \
+	DeepValleyTheme
 
-# Purple
+# Red Themes
 PRODUCT_PACKAGES += \
-    PurpleTheme
+    RedTheme \
+	BloodyMaryTheme
 
-# Red
+# Green Themes
 PRODUCT_PACKAGES += \
-    RedTheme
+    GreenTheme \
+	LimaBeanTheme \
+	LimeTheme\
+	TealTheme
 
-# Sky Blue
+# Yellow Themes
 PRODUCT_PACKAGES += \
-    SkyBlueTheme
+    YellowTheme \
+	SunFlowerTheme
 
-# Yellow
+# Other Themes
 PRODUCT_PACKAGES += \
-    YellowTheme
-
-# Teal
-PRODUCT_PACKAGES += \
-    TealTheme
-
-# White
-PRODUCT_PACKAGES += \
-    WhiteTheme
+    BlackTheme \
+	GreyTheme\
+	WhiteTheme
 
 # Set Pixel blue light theme on Gboard
 PRODUCT_PROPERTY_OVERRIDES += ro.com.google.ime.theme_id=5
