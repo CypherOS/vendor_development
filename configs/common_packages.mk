@@ -21,6 +21,9 @@ PRODUCT_PACKAGES += \
     GalleryX \
     Luna \
     MusicX
+	
+# Aoscp OTA
+PRODUCT_PACKAGES += COTA
 
 # Providers
 #PRODUCT_PACKAGES += \
