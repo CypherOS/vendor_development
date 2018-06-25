@@ -13,3 +13,6 @@ allow platform_app system_app_data_file:file { create_file_perms rw_file_perms }
 
 # gallery2 renderscript
 allow platform_app app_data_file:file { execute };
+
+# Allow NFC service to be found
+allow platform_app nfc_service:service_manager find;

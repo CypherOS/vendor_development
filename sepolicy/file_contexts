@@ -4,5 +4,12 @@
 #/system/bin/mkfs\.ntfs    u:object_r:mkfs_exec:s0
 
 # fsck
-/system/bin/fsck\.ntfs                          u:object_r:fsck_exec:s0
-/system/bin/mount\.exfat                         u:object_r:fsck_exec:s0
+/system/bin/fsck\.exfat    u:object_r:fsck_exec:s0
+/system/bin/fsck\.ntfs     u:object_r:fsck_exec:s0
+/system/bin/mount\.exfat   u:object_r:fsck_exec:s0
+
+# Fingerprint
+/(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.0-service u:object_r:hal_fingerprint_default_exec:s0
+
+# Sysinit
+/system/bin/sysinit                     u:object_r:sysinit_exec:s0
