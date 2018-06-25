@@ -6,6 +6,7 @@ export AOSCP_CODENAME := Parfait
 export AOSCP_BUILD_NUMBER := CBNP.8102.$(shell date -u +%d).$(shell date -u +%m)052
 
 AOSCP_DISPLAY_VERSION := $(AOSCP_VERSION)
+AOSCP_MAINTENANCE_PATCH := 2018-06-25
 
 export ROM_VERSION := $(AOSCP_VERSION)-$(AOSCP_BUILD_NUMBER)
 
@@ -25,7 +26,8 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.aoscp.display.version=$(AOSCP_DISPLAY_VERSION) \
     ro.aoscp.releasetype=$(AOSCP_BUILDTYPE) \
     ro.aoscp.codename=$(AOSCP_CODENAME) \
-    ro.aoscp.build=$(AOSCP_BUILD_NUMBER)
+    ro.aoscp.build=$(AOSCP_BUILD_NUMBER) \
+	ro.aoscp.maintenance_patch=$(AOSCP_MAINTENANCE_PATCH)
 
 export AOSCP_TARGET_ZIP := aoscp_$(AOSCP_BUILD)-$(AOSCP_VERSION)-$(AOSCP_BUILD_NUMBER)-$(AOSCP_BUILDTYPE).zip
 
