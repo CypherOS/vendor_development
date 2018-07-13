@@ -148,4 +148,6 @@ PRODUCT_COPY_FILES += \
 -include vendor/aoscp/configs/common_packages.mk
 -include vendor/aoscp/configs/common_theme_packages.mk
 
+-include hardware/aoscp/Android.mk
+
 $(call prepend-product-if-exists, vendor/extra/product.mk)
