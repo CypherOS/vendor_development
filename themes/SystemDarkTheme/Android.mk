@@ -3,6 +3,7 @@ include $(CLEAR_VARS)
 
 LOCAL_RRO_THEME := SystemDarkTheme
 LOCAL_CERTIFICATE := platform
+LOCAL_SDK_VERSION := current
 
 LOCAL_SRC_FILES := $(call all-subdir-java-files)
 
