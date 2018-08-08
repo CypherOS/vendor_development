@@ -146,6 +146,6 @@ PRODUCT_COPY_FILES += \
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
 -include vendor/aoscp/configs/partner_gms.mk
 -include vendor/aoscp/configs/common_packages.mk
--include vendor/aoscp/configs/common_theme_packages.mk
+#-include vendor/aoscp/configs/common_theme_packages.mk
 
 $(call prepend-product-if-exists, vendor/extra/product.mk)
