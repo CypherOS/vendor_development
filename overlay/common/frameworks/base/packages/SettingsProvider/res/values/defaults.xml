@@ -22,7 +22,7 @@
      for different hardware and product builds. -->
 <resources>
 
-    <!-- Determines the BackupTransportService package -->
-    <string name="def_backup_transport" translatable="false">com.google.android.backup/.BackupTransportService</string>
+    <!-- Determines the BackupTransportService package
+    <string name="def_backup_transport" translatable="false">com.google.android.backup/.BackupTransportService</string>-->
 
 </resources>
