@@ -17,6 +17,7 @@
 <!-- Colors specific to DeviceDefault themes. These are mostly pass-throughs to enable
        overlaying new theme colors. --> 
 <resources>
+<!--
     <color name="primary_device_default_dark">#ff2d2d2d</color>
     <color name="primary_device_default_settings">@color/primary_device_default_dark</color>
     <color name="primary_dark_device_default_dark">#ff242424</color>
@@ -30,4 +31,5 @@
     <color name="accent_device_default_light">#ff4285f4</color>
     <color name="accent_device_default_dark">#ff5e97f6</color>
     <color name="accent_device_default_50">#ffe8f0fe</color>
+-->
 </resources>
