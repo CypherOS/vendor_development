@@ -27,7 +27,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += COTA
 
 # Google Packages
-PRODUCT_PACKAGES += Wallpapers
+PRODUCT_PACKAGES += \
+    SoundPickerPrebuilt \
+	Wallpapers
 
 # Extra tools
 PRODUCT_PACKAGES += \

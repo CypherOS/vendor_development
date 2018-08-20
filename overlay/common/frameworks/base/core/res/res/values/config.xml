@@ -33,5 +33,8 @@
          Defaults to true. If this is not appropriate for specific locales
          it should be disabled in that locale's resources. -->
     <bool name="config_buttonTextAllCaps">false</bool>
+	
+	<!-- Enable the RingtonePickerActivity in 'com.android.providers.media'. -->
+    <bool name="config_defaultRingtonePickerEnabled">false</bool>
 
 </resources>
