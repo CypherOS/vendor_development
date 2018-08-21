@@ -36,3 +36,8 @@ TARGET_LUNA_PLATFORM_SEPOLICY := false
 # updated, apps may require updates themselves to support the new
 # API's.
 TARGET_LUNA_PLATFORM_SDK_APPS := false
+
+# This configuration allows including Luna platform fonts in aoscp
+# builds, that target the core framework and replace aosp font's
+# with our own.
+TARGET_LUNA_PLATFORM_FONTS := true

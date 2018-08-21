@@ -123,8 +123,8 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     media.sf.omx-plugin=libffmpeg_omx.so \
     media.sf.extractor-plugin=libffmpeg_extractor.so
 
-# Common overlay
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)overlay/common
+# Platform overlay
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)overlay/aoscp
 
 # Version information used on all builds
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_VERSION_TAGS=release-keys USER=android-build BUILD_UTC_DATE=$(shell date +"%s")
