@@ -35,6 +35,12 @@ PRODUCT_PACKAGES += \
     SettingsIntelligenceGooglePrebuilt \
     SoundPickerPrebuilt \
     Wallpapers
+	
+# Turbo
+PRODUCT_PACKAGES += \
+    Turbo \
+    turbo.xml \
+	privapp-permissions-turbo.xml
 
 # Extra tools
 PRODUCT_PACKAGES += \
