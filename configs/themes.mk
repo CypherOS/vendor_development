@@ -4,13 +4,11 @@ ifeq ($(TARGET_LUNA_PLATFORM_THEMES),true)
 
 # Dark Theme
 PRODUCT_PACKAGES += \
-    SystemDarkTheme \
-    SettingsDarkTheme
+    SystemDarkTheme
 
 # Black Theme
 PRODUCT_PACKAGES += \
-    SystemBlackTheme \
-    SettingsBlackTheme
+    SystemBlackTheme
 
 # Blue Themes
 PRODUCT_PACKAGES += \
