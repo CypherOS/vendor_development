@@ -37,5 +37,10 @@
 	
 	<!-- Allow Opa (Pixel navbar) layout
     <bool name="config_allowOpaLayout">true</bool> -->
+	
+	<!-- The version of MultiUser to use at runtime.
+	     1: The default platform interface
+		 2: The advanced minimal interface -->
+    <integer name="config_multiUserVersion">2</integer>
 
 </resources>
