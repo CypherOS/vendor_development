@@ -25,7 +25,17 @@ PRODUCT_PACKAGES += \
 # AOSCP Packages
 PRODUCT_PACKAGES += \
     GalleryX \
-    LunaQuickStep
+    LunaQuickStep \
+	WeatherClient
+
+# WeatherClient
+PRODUCT_COPY_FILES += \
+    vendor/aoscp/prebuilt/common/etc/permissions/org.pixelexperience.weather.client.xml:system/etc/permissions/org.pixelexperience.weather.client.xml \
+	vendor/aoscp/prebuilt/common/etc/default-permissions/org.pixelexperience.weather.client.xml:system/etc/default-permissions/org.pixelexperience.weather.client.xml
+
+# WeatherClient
+PRODUCT_PROPERTY_OVERRIDES += \
+    org.pixelexperience.weather.revision=2
 
 # Aoscp OTA
 PRODUCT_PACKAGES += COTA
