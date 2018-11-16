@@ -19,6 +19,9 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.aoscp.build=$(PLATFORM_LUNA_BUILD_NUMBER) \
     ro.aoscp.maintenance_patch=$(PLATFORM_LUNA_MAINTENANCE_PATCH)
 
+# CypherOS Device Intro
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += ro.aoscp.first_time=true
+
 export AOSCP_TARGET_ZIP := aoscp_$(AOSCP_BUILD)-$(AOSCP_VERSION)-$(shell date -u +%Y%m%d)-$(AOSCP_BUILDTYPE).zip
 
 ifeq ($(PRODUCT_GMS_CLIENTID_BASE),)
