@@ -31,7 +31,7 @@ PRODUCT_PACKAGES += \
 # AOSCP Hardware
 PRODUCT_PACKAGES += \
     hardware.aoscp.core \
-	hardware.aoscp.core.xml \
+    hardware.aoscp.core.xml \
     hardware.aoscp.controllers \
     hardware.aoscp.controllers.xml
 
@@ -63,6 +63,11 @@ PRODUCT_PACKAGES += \
     Turbo \
     turbo.xml \
     privapp-permissions-turbo.xml
+
+# ActionServices
+PRODUCT_PACKAGES += \
+    MatchmakerPrebuilt \
+    privapp-permissions-actionservices.xml
 
 # Extra tools
 PRODUCT_PACKAGES += \
