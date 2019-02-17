@@ -1,0 +1,2 @@
+# Allow access to aoscp HALs
+hal_client_domain(system_app, hal_aoscp_touch)
