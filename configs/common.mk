@@ -11,6 +11,10 @@ PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
 # leave less information available via JDWP.
 PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
 
+# Bootanimation
+PRODUCT_PACKAGES += \
+    bootanimation.zip
+
 # We build unofficial by default
 ifndef AOSCP_BUILDTYPE
     AOSCP_BUILDTYPE := unofficial
@@ -137,7 +141,6 @@ PRODUCT_COPY_FILES += \
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
 
-include $(LOCAL_PATH)configs/bootanimation.mk
 include $(LOCAL_PATH)configs/fonts.mk
 include $(LOCAL_PATH)configs/packages.mk
 include $(LOCAL_PATH)configs/themes.mk
