@@ -11,6 +11,9 @@ PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
 # leave less information available via JDWP.
 PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
 
+# Build with threads support, if available
+LLVM_ENABLE_THREADS := true
+
 # We build unofficial by default
 ifndef AOSCP_BUILDTYPE
     AOSCP_BUILDTYPE := unofficial
